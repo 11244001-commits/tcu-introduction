@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>慈濟大學 Buddhist Tzu Chi University | 介紹網站</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="慈濟大學秉持「慈悲喜捨」校訓，強調「尊重生命、以人為本」教育理念。2024年與慈濟科技大學合併後，深耕東台灣，培育具備利他精神與智慧科技的全球卓越人才。">
+  <meta name="keywords" content="慈濟大學, 慈大, 慈濟科大, 合併, 醫學院, 無語良師, 慈誠懿德, 花蓮大學, 台灣大學介紹">
+  <meta name="author" content="Antigravity Web Studio">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="慈濟大學 Buddhist Tzu Chi University | 介紹網站">
+  <meta property="og:description" content="探索慈濟大學的卓越學術學院、三大校區與獨特人文特色，如無語良師模擬手術與慈誠懿德關懷。">
+  <meta property="og:url" content="https://tcu-intro.vercel.app">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       導覽列 (Navbar)
+       ========================================== -->
+  <header>
+    <div class="container navbar">
+      <!-- LOGO -->
+      <a href="#hero" class="logo" aria-label="慈濟大學首頁">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+        </svg>
+        <span>慈濟大學</span>
+      </a>
+
+      <!-- 導覽連結與主題切換 -->
+      <div class="nav-actions-wrapper">
+        <nav class="nav-links-container" id="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">關於慈大</a></li>
+            <li><a href="#campuses" class="nav-link">校區導覽</a></li>
+            <li><a href="#colleges" class="nav-link">學術學院</a></li>
+            <li><a href="#features" class="nav-link">特色人文</a></li>
+            <li><a href="#contact" class="nav-link">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-actions">
+        <!-- 暗黑模式切換按鈕 -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="切換深淺色模式">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- 行動端選單切換 (漢堡按鈕) -->
+        <button class="menu-toggle-btn" id="menu-toggle" aria-label="切換選單">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         首頁英雄區 (Hero Section)
+         ========================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">2024 全新合校里程碑</div>
+          <h1 class="hero-title title-serif">
+            慈悲喜捨，<span>以人為本</span><br>探索生命的深度與廣度
+          </h1>
+          <p class="hero-desc">
+            慈濟大學座落於美麗的台灣花蓮，將專業科學教育與人文品格完美融合。我們致力於為世界培育具備利他精神、專業素養與全球關懷的卓越人才。
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">認識慈大</a>
+            <a href="#colleges" class="btn btn-secondary">學術學院</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-shapes">
+            <div class="shape-bg"></div>
+            <div class="hero-illustration">
+              <div class="ill-header">
+                <div class="ill-logo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.8.8 2.1 1 2.96.47l2.8-1.8a2.53 2.53 0 0 1 3.2 0l1.47 1.12"/></svg>
+                  <span>Tzu Chi University</span>
+                </div>
+              </div>
+              <div class="ill-body">
+                <div class="ill-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+                </div>
+                <div class="ill-bar long"></div>
+                <div class="ill-bar medium"></div>
+                <div class="ill-bar short"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         關於慈大 (About Section)
+         ========================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">About TCU</span>
+          <h2 class="section-title title-serif">關於慈濟大學</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-main reveal">
+            <h3 class="title-serif" style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">
+              人文與專業並重，開啟教育新篇章
+            </h3>
+            <p style="margin-bottom: 20px; font-size: 1.05rem;">
+              慈濟大學成立於 1994 年，由慈濟基金會創辦人證嚴上人秉持「救人需先救人命，培育良醫需辦學」之宏願而創立。學校坐落於台灣東部山海交織的花蓮市，擁有極佳的學術探索與自然生活環境。
+            </p>
+            <p style="margin-bottom: 30px; font-size: 1.05rem;">
+              <strong>2024 年 8 月，慈濟大學與慈濟科技大學正式合併</strong>，整合兩校在技職與普通教育體系的優勢，成為擁有更健全科系、豐富科研資源與優質人文傳統的全新綜合型大學。
+            </p>
+            <a href="#campuses" class="btn btn-primary">參觀三大校區</a>
+          </div>
+          <div class="about-features reveal">
+            <!-- 特色卡片 1 -->
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              </div>
+              <h3>校訓「慈悲喜捨」</h3>
+              <p>以慈修身、以悲啟智、以喜聚德、以捨行道，培育樂於付出的社會公民。</p>
+            </div>
+            <!-- 特色卡片 2 -->
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-pulse"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l1.5-3 2 6 1.5-3h3.1"/></svg>
+              </div>
+              <h3>醫療慈善緊密結合</h3>
+              <p>與慈濟志業體深度合作，提供卓越的醫學研究平台與臨床實習管道。</p>
+            </div>
+            <!-- 特色卡片 3 -->
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round"><path d="M18 21a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><path d="M12 2a5 5 0 0 0-3 7.95a5 5 0 0 0 6 0A5 5 0 0 0 12 2Z"/></svg>
+              </div>
+              <h3>精緻導師輔導制度</h3>
+              <p>獨創「慈誠懿德會」制度，由志工媽媽爸爸在學業以外提供家庭般的溫暖陪伴。</p>
+            </div>
+            <!-- 特色卡片 4 -->
+            <div class="about-card">
+              <div class="about-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <h3>全球視野與人道關懷</h3>
+              <p>結合慈濟國際救援，推動全球志工服務學習，讓學生踏上世界舞台。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         校區導覽 (Campuses Section)
+         ========================================== -->
+    <section id="campuses" class="section" style="background-color: rgba(0, 105, 112, 0.02);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Explore Campuses</span>
+          <h2 class="section-title title-serif">三大校區導覽</h2>
+        </div>
+        
+        <!-- Tab Buttons -->
+        <div class="campus-tabs reveal">
+          <button class="tab-btn active" data-tab="central">中央校區 (校本部)</button>
+          <button class="tab-btn" data-tab="jieren">介仁校區</button>
+          <button class="tab-btn" data-tab="jianguo">建國校區</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content reveal">
+          <!-- Central Campus -->
+          <div class="tab-panel active" id="central-panel">
+            <div class="campus-img-container">
+              <div class="campus-placeholder-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 14.2 0L21 21Z"/><path d="M3 21h18"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M12 15h.01"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M16 15h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><path d="M8 15h.01"/></svg>
+                <h3>中央校區 (校本部) 示意景觀</h3>
+                <p>坐落中央路，鄰近靜思堂與慈濟醫院</p>
+              </div>
+            </div>
+            <div class="campus-info">
+              <h3>中央校區 (校本部)</h3>
+              <p>
+                中央校區為慈濟大學的核心發源地，鄰近花蓮靜思堂與花蓮慈濟醫院，為台灣東部的醫療學術核心。本校區以卓越的醫學與生物科技研究著稱，建置了許多世界級的教學研究中心。
+              </p>
+              <div class="campus-details">
+                <div class="detail-item">
+                  <div class="detail-label">校區地址</div>
+                  <div class="detail-val">花蓮市中央路三段701號</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">核心學科</div>
+                  <div class="detail-val">醫學、生命科學、生醫</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jieren Campus -->
+          <div class="tab-panel" id="jieren-panel">
+            <div class="campus-img-container">
+              <div class="campus-placeholder-img" style="background: linear-gradient(135deg, #E6F3F4 0%, var(--bg-card) 100%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trees"><path d="M10 10v.01"/><path d="M16 14v.01"/><path d="M8 14v.01"/><path d="M12 2a4 4 0 0 0-4 4c0 .7.2 1.3.5 1.9A4 4 0 0 0 6 13c0 .8.2 1.5.7 2.1A5 5 0 0 0 7 21h10a5 5 0 0 0 .3-5.9c.5-.6.7-1.3.7-2.1a4 4 0 0 0-2.5-5.1c.3-.6.5-1.2.5-1.9a4 4 0 0 0-4-4Z"/><path d="M12 17v4"/><path d="M8 21v-3.5"/><path d="M16 21v-3.5"/></svg>
+                <h3>介仁校區 示意景觀</h3>
+                <p>優雅綠意環抱，學術與大自然的交融</p>
+              </div>
+            </div>
+            <div class="campus-info">
+              <h3>介仁校區</h3>
+              <p>
+                介仁校區座落於環境清幽的花蓮市介仁街，被優美的落羽松林與群山綠意環抱。本校區為人文社會科學院主要所在地，環境祥和，提供學生極佳的文藝思辨與心靈沈澱氛圍。
+              </p>
+              <div class="campus-details">
+                <div class="detail-item">
+                  <div class="detail-label">校區地址</div>
+                  <div class="detail-val">花蓮市介仁街67號</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">核心學科</div>
+                  <div class="detail-val">傳播、社工、人文、心理</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jianguo Campus -->
+          <div class="tab-panel" id="jianguo-panel">
+            <div class="campus-img-container">
+              <div class="campus-placeholder-img" style="background: linear-gradient(135deg, #F3ECE0 0%, var(--bg-card) 100%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>
+                <h3>建國校區 示意景觀</h3>
+                <p>融合技職教育精髓與永續科技應用</p>
+              </div>
+            </div>
+            <div class="campus-info">
+              <h3>建國校區</h3>
+              <p>
+                建國校區為原「慈濟科技大學」校本部，在 2024 年合併後，成為慈大推動智慧管理、技職科技教育、以及高階護理專業的關鍵基地。本校區擁有極高的實作率，提供業界等級實驗室與設備。
+              </p>
+              <div class="campus-details">
+                <div class="detail-item">
+                  <div class="detail-label">校區地址</div>
+                  <div class="detail-val">花蓮市建國路二段880號</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">核心學科</div>
+                  <div class="detail-val">護理科技、智慧管理、資工</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         學術學院 (Colleges Section)
+         ========================================== -->
+    <section id="colleges" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Academic Divisions</span>
+          <h2 class="section-title title-serif">學術學院介紹</h2>
+        </div>
+
+        <div class="colleges-grid reveal">
+          <!-- 醫學院 -->
+          <div class="college-card" data-college="medicine">
+            <div>
+              <div class="college-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-stethoscope"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+              </div>
+              <h3 class="title-serif">醫學院</h3>
+              <p>結合東台灣最頂尖的醫療資源，推動臨床與精準醫學發展。</p>
+            </div>
+            <span class="college-link">
+              了解更多
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- 護理學院 -->
+          <div class="college-card" data-college="nursing">
+            <div>
+              <div class="college-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.8.8 2.1 1 2.96.47l2.8-1.8a2.53 2.53 0 0 1 3.2 0l1.47 1.12"/></svg>
+              </div>
+              <h3 class="title-serif">護理學院</h3>
+              <p>台灣頂尖高階護理人才孵化器，提供業界一流資源與就業保證。</p>
+            </div>
+            <span class="college-link">
+              了解更多
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- 生醫學院 -->
+          <div class="college-card" data-college="biomedical">
+            <div>
+              <div class="college-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dna"><path d="M4.7 7.2 7.2 4.7"/><path d="m20 20-3-3"/><path d="m19 2-3 3"/><path d="m4.7 16.8 12.1-12.1"/><path d="m18 10-6 6"/><path d="m6 14 6-6"/><path d="M20 4c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z"/><path d="M8 20c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z"/><path d="m6 4 3 3"/></svg>
+              </div>
+              <h3 class="title-serif">生物醫學科技學院</h3>
+              <p>深耕生命科學與分子研究，大一起進行一對一師徒制實驗室培植。</p>
+            </div>
+            <span class="college-link">
+              了解更多
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- 人文社會科學院 -->
+          <div class="college-card" data-college="humanities">
+            <div>
+              <div class="college-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <h3 class="title-serif">人文社會科學院</h3>
+              <p>陶冶人文情懷，融合社會實踐與多媒體傳播技能。</p>
+            </div>
+            <span class="college-link">
+              了解更多
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- 智慧永續管理學院 -->
+          <div class="college-card" data-college="sustainability">
+            <div>
+              <div class="college-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 7a8 8 0 0 1-10 11Z"/><path d="M9.8 6.1C10.5 9 12 12 16 15"/></svg>
+              </div>
+              <h3 class="title-serif">智慧永續管理學院</h3>
+              <p>結合 AI 科技與 ESG 綠色思維，引導企業迎向科技數位化與環境永續。</p>
+            </div>
+            <span class="college-link">
+              了解更多
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         特色人文 (Features Section)
+         ========================================== -->
+    <section id="features" class="section" style="background-color: rgba(0, 105, 112, 0.02);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Unique Spirit</span>
+          <h2 class="section-title title-serif">獨特的人文與教學特色</h2>
+        </div>
+
+        <div class="features-grid reveal">
+          <!-- 特色 1 -->
+          <div class="feature-item">
+            <div class="feature-banner">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-cog"><circle cx="18" cy="15" r="3"/><circle cx="9" cy="7" r="4"/><path d="M10 15H2a4 4 0 0 1 4-4h4a4 4 0 0 1 1.5.3"/><path d="m21.7 16.4-.9-.3"/><path d="m15.2 13.9-.9-.3"/><path d="m18 12v1"/><path d="m18 17v1"/><path d="m19.8 13.6-.3.9"/><path d="m16.2 16.4-.3.9"/><path d="m20.4 16.4.9.3"/><path d="m13.9 13.9.9.3"/><path d="m19.5 17.3-.3-.9"/><path d="m16.5 14.7-.3-.9"/></svg>
+            </div>
+            <div class="feature-body">
+              <h3 class="title-serif">無語良師 (Silent Mentor)</h3>
+              <p>
+                慈大全球首創的醫學模擬解剖手術教學。大體捐贈者「無語良師」用身體為醫學生授課，學生在課程前後登門關懷家屬，體現對生命的至高尊重，在學習卓越技術的同時，深刻內化醫德。
+              </p>
+            </div>
+          </div>
+
+          <!-- 特色 2 -->
+          <div class="feature-item">
+            <div class="feature-banner" style="background: linear-gradient(135deg, #004D53 0%, var(--primary) 100%);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shapes"><path d="M8.3 10a.7.7 0 0 1-.625-.375l-2.4-4a.7.7 0 0 1 0-.75l2.4-4A.7.7 0 0 1 8.3.5h4.8a.7.7 0 0 1 .625.375l2.4 4a.7.7 0 0 1 0 .75l-2.4 4a.7.7 0 0 1-.625.375H8.3Z"/><path d="M18 23.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/><rect width="9" height="9" x="1" y="14" rx="1"/></svg>
+            </div>
+            <div class="feature-body">
+              <h3 class="title-serif">慈誠懿德會制度</h3>
+              <p>
+                由慈濟志業體遴選各行各業、具備豐富社會閱歷的熱心志工，組成「慈誠爸爸、懿德媽媽」，每班配置數名，定期陪伴學生、聚會傾聽生活煩惱，提供學業之外溫暖的社會情感支持。
+              </p>
+            </div>
+          </div>
+
+          <!-- 特色 3 -->
+          <div class="feature-item">
+            <div class="feature-banner" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div class="feature-body">
+              <h3 class="title-serif">國際接軌與服務學習</h3>
+              <p>
+                慈大引導學生走出象牙塔，結合慈濟基金會全球人道救援網絡，帶領學生深入東南亞、非洲等多個發展中國家進行跨國醫療服務、教育關懷與偏鄉服務，培養具備國際宏觀的地球公民。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         聯絡與回饋 (Contact Section)
+         ========================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title title-serif">聯絡與諮詢</h2>
+        </div>
+
+        <div class="contact-grid reveal">
+          <!-- 聯絡資訊 -->
+          <div class="contact-info-panel">
+            <div style="margin-bottom: 40px;">
+              <h3 class="title-serif" style="font-size: 1.8rem; margin-bottom: 15px; color: var(--primary);">歡迎聯絡慈濟大學</h3>
+              <p style="color: var(--text-muted);">
+                如果您對入學招生、學院課程、海外實習或本校特色有任何問題，歡迎填寫右手邊表單，或利用下方管道與我們聯繫。
+              </p>
+            </div>
+            <div class="contact-details-list">
+              <!-- 電話 -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <h4>學校電話</h4>
+                  <p>+886-3-8565301</p>
+                </div>
+              </div>
+              <!-- 信箱 -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <h4>電子信箱</h4>
+                  <p>tcuinfo@tcu.edu.tw</p>
+                </div>
+              </div>
+              <!-- 地址 -->
+              <div class="contact-item-card">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h4>校本部地址</h4>
+                  <p>97004 台灣花蓮市中央路三段701號</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 回饋表單 -->
+          <div class="contact-form-panel">
+            <h3 style="margin-bottom: 25px;" class="title-serif">線上諮詢 / 回饋表單</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">您的姓名 Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="請輸入姓名" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">您的信箱 Email</label>
+                <input type="email" id="form-email" class="form-control" placeholder="example@mail.com" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">您的訊息 Message</label>
+                <textarea id="form-message" class="form-control" placeholder="請填寫您想要詢問的問題或給我們的意見" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 14px;">
+                傳送訊息
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              </button>
+              <div id="form-status" class="form-status-msg"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       頁尾 (Footer)
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" style="margin-bottom: 15px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
+            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+          </svg>
+          <span style="font-size: 1.4rem;">慈濟大學</span>
+        </a>
+        <p>慈悲喜捨，以人為本。深耕東臺灣的高等教育重鎮，陪伴每一位學子探索無垠未來。</p>
+      </div>
+      <div class="footer-nav">
+        <h4>快速連結</h4>
+        <ul>
+          <li><a href="#about">關於慈大</a></li>
+          <li><a href="#campuses">校區導覽</a></li>
+          <li><a href="#colleges">學術學院</a></li>
+          <li><a href="#features">特色人文</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>社群媒體</h4>
+        <p>追蹤慈大最新動態，了解校園生活與學術前線：</p>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/TCU.edu.tw" target="_blank" class="social-btn" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/tcu.edu.tw" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@BuddhistTzuChiUniversity" target="_blank" class="social-btn" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><polygon points="9.7 15 14.5 12 9.7 9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 慈濟大學 Buddhist Tzu Chi University. 版權所有.</p>
+      <p>設計與開發 &bull; Antigravity Web Studio</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       學術學院彈出視窗 (Modal Overlay)
+       ========================================== -->
+  <div class="modal-overlay" id="college-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close" aria-label="關閉彈出視窗">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div id="modal-body">
+        <!-- 內容由 JavaScript 動態填入 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
